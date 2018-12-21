@@ -94,15 +94,8 @@
 import { components } from 'aws-amplify-vue'
 
 export default {
-  name: 'app', 
-  components: {
-    ...<yourOtherComponents>,
-    ...components
-  }
-},
-
-export default {
   name: "App",
+  components: {},
   data() {
     return {
       tehtavaLista: [],
