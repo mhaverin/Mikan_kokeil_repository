@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <h1>TEHTÄVÄLISTA</h1>
-    npm i aws-amplify
-    npm i aws-amplify-vue
+
     <input v-model="uusiTehtava" placeholder="Uusi tehtävä" />
     <input v-model="uusiAlaTehtava" placeholder="Uusi alatehtävä" />
     <input v-model="uusiPrioriteetti" placeholder="Anna Priority" />
@@ -92,6 +91,16 @@
 </template>
 
 <script>
+import { components } from 'aws-amplify-vue'
+
+export default {
+  name: 'app', 
+  components: {
+    ...<yourOtherComponents>,
+    ...components
+  }
+},
+
 export default {
   name: "App",
   data() {
